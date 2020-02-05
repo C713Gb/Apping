@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventPage.AddEventActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/addEventAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addEventToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/addEventClose"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:src="@drawable/ic_close" />
+
+                <Button
+                    android:id="@+id/post_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post"
+                    android:textColor="#f032e6"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/post_button"
+                    android:layout_alignParentEnd="true"/>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/image_added"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher"
+                android:background="#d3d3d3"/>
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event name"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"/>
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="20dp"
+                android:maxLines="5"/>
+
+            <EditText
+                android:id="@+id/organisersEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Organisers"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="20dp"
+                android:maxLines="5"/>
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Date"
+                android:textSize="18sp"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="20dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Location"
+                android:textSize="18sp"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

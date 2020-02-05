@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateOrSignInAcc.SignInActivity">
+
+
+    <EditText
+        android:id="@+id/s_emailEditText"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="email id"
+        android:padding="10dp"
+        android:background="@drawable/textview_border"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/s_passwordEditText"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_emailEditText"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/signbtn"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:text="Sign in"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_passwordEditText"
+        app:layout_constraintVertical_bias="0.824" />
+</androidx.constraintlayout.widget.ConstraintLayout>
